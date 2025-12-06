@@ -1,5 +1,5 @@
 class personaje:
-    def __init__(self,nombre,vidam,manam,estadisticas,puntos=0):
+    def __init__(self,nombre,,clase,vidam,manam,estadisticas,puntos=0):
         self.nombre=nombre
         self.vida=vidam
         self.mana=manam
@@ -25,6 +25,7 @@ class personaje:
         print(f"Nombre: {self.nombre} | Vida: {self.vida_actual} | Mana: {self.mana_actual}")
 
     def atacar(self,objetivo):
+        self.mostrar_nombre()
         print(f"{self.nombre} ataca a {objetivo.nombre}!")
         objetivo.vida_actual -= self.daño
 
