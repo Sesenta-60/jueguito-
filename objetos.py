@@ -1,7 +1,7 @@
 class personaje:
     def __init__(self,nombre,clase):
         self.nombre=nombre
-        self.vidam=
+ self.vidam=estadisticas["vitalidad"]*1.30
         self.vida=vida
         self.mana=manam
         self.estadisticas={"fuerza","vitalidad", ""}
